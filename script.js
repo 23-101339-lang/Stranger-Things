@@ -1,6 +1,6 @@
 document.getElementById('sitetitle').innerHTML = 'STRANGER THINGS';
-document.getElementById('linktext').innerHTML = 'Home';
-document.getElementById('linktext2').innerHTML = 'Characters';
+document.getElementById('linktext').innerHTML = '<a href="index.html">Home</a>';
+document.getElementById('linktext2').innerHTML = '<a href="character.html">Characters</a>';
 document.getElementById('linktext3').innerHTML = 'Episodes';
 document.getElementById('linktext4').innerHTML = 'Merch';
 document.getElementById('maintitle').innerHTML = 'STRANGER THINGS';
@@ -28,3 +28,49 @@ document.getElementById('episodetitle3').innerHTML = 'THE MIND FLAYER';
 document.getElementById('storeheading').innerHTML = 'MERCH STORE';
 document.getElementById('storetext').innerHTML = 'Official Stranger Things merchandise. Posters, apparel, collectibles, and more from Hawkins, Indiana.';
 document.getElementById('shopbtn').innerHTML = 'Shop Collection';
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, {threshold: 0.1});
+    
+    const elements = document.querySelectorAll('.maintitle, .maindesc, .herobadge, .herobadge2, .herobadge3, .watchbtn, .castheading, .castdesc, .castcard, .episodeheading, .episodedesc, .episodecard, .storeheading, .storetext, .shopbtn');
+    
+    elements.forEach(el => {
+        el.classList.add('fade-up');
+        observer.observe(el);
+    });
+    
+
+});
+
+
+elements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add('show');
+    }
+});
+
+
+
+function goToCharacter(characterKey) {
+    window.location.href = `character.html?char=${characterKey}`;
+}
+
+

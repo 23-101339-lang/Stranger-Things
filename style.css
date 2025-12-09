@@ -235,7 +235,7 @@
 
 .castphoto{
     width: 100%;
-    height: 400px;
+    height: 550px;
     background-image: url('Images/ElevenImage.webp');
     background-size: cover;
     transition: all 0.5s ease;
@@ -248,7 +248,7 @@
 
 .castphoto2{
     width: 100%;
-    height: 400px;
+    height: 550px;
     background-image: url('Images/Mike_Wheeler.png');
     background-size: cover;
     transition: all 0.5s ease;
@@ -256,7 +256,7 @@
 
 .castphoto3{
     width: 100%;
-    height: 400px;
+    height: 550px;
     background-image: url('Images/JimHopperST.png');
     background-size: cover;
     transition: all 0.5s ease;
@@ -657,12 +657,6 @@ body {
     width: 35%;
 }
 
-.profileimage{
-    width: 100%;
-    height: 550px;
-    background: #1A1A1A;
-}
-
 .profileright{
     display: flex;
     flex-direction: column;
@@ -671,7 +665,7 @@ body {
 }
 
 .titlelabel{
-    font-family: Tinos;
+    font-family: Arial;
     font-size: 16px;
     color: #E50914;
     font-weight: 600;
@@ -701,7 +695,7 @@ body {
 }
 
 .actortext{
-    font-family: Tinos;
+    font-family: Arial;
     font-size: 16px;
     color: #CCC;
 }
@@ -715,7 +709,7 @@ body {
 }
 
 .biotext{
-    font-family: Tinos;
+    font-family: Arial;
     font-size: 16px;
     color: #999;
     line-height: 1.8;
@@ -762,19 +756,19 @@ body {
 }
 
 .powername{
-    font-family: Tinos;
+    font-family: Arial;
     font-size: 16px;
     color: #CCC;
 }
 
 .powername2{
-    font-family: Tinos;
+    font-family: Arial;
     font-size: 16px;
     color: #CCC;
 }
 
 .powername3{
-    font-family: Tinos;
+    font-family: Arial;
     font-size: 16px;
     color: #CCC;
 }
@@ -813,19 +807,19 @@ body {
 }
 
 .statlabel{
-    font-family: Tinos;
+    font-family: Arial;
     font-size: 16px;
     color: #999;
 }
 
 .statlabel2{
-    font-family: Tinos;
+    font-family: Arial;
     font-size: 16px;
     color: #999;
 }
 
 .statlabel3{
-    font-family: Tinos;
+    font-family: Arial;
     font-size: 16px;
     color: #999;
 }
@@ -965,4 +959,25 @@ body {
     font-weight: 700;
     letter-spacing: 4px;
 }
+
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+a {
+    color: inherit;       /* keeps the text color from parent */
+    text-decoration: none; /* removes underline */
+    font-weight: inherit;  /* keeps the font weight/style */
+    cursor: pointer;       /* still looks clickable */
+  }
+  
 
