@@ -1,0 +1,954 @@
+@font-face {
+    font-family: Tinos;
+    src: url('Tinos-Regular.ttf');
+}
+
+.bigdiv{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.topsection{
+    width: 100%;
+    background: #000;
+    padding: 20px 80px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #1A1A1A;
+}
+
+.topwrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sitetitle{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #E50914;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.topmenu{
+    display: flex;
+    gap: 40px;
+}
+
+.toplink{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.homeicon{
+    width: 16px;
+    height: 16px;
+    background: #E50914;
+    border-radius: 50%;
+}
+
+.casticon{
+    width: 16px;
+    height: 16px;
+    background: #666;
+    border-radius: 50%;
+}
+
+.episodesicon{
+    width: 16px;
+    height: 16px;
+    background: #666;
+    border-radius: 50%;
+}
+
+.merchicon{
+    width: 16px;
+    height: 16px;
+    background: #666;
+    border-radius: 50%;
+}
+
+.linktext{
+    font-family: Arial;
+    font-size: 16px;
+    color: #E50914;
+    font-weight: 600;
+}
+
+.linktext2{
+    font-family: Arial;
+    font-size: 16px;
+    color: #999;
+    font-weight: 600;
+}
+
+.linktext3{
+    font-family: Arial;
+    font-size: 16px;
+    color: #999;
+    font-weight: 600;
+}
+
+.linktext4{
+    font-family: Arial;
+    font-size: 16px;
+    color: #999;
+    font-weight: 600;
+}
+
+.herosection{
+    width: 100%;
+    background: #000;
+    padding: 120px 80px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.9));
+}
+
+.herowrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.maintitle{
+    font-family: Tinos;
+    font-size: 120px;
+    color: #E50914;
+    font-weight: 700;
+    letter-spacing: 20px;
+    text-align: center;
+    line-height: 1;
+}
+
+.maindesc{
+    font-family: Arial;
+    font-size: 16px;
+    color: #CCC;
+    text-align: center;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+.herolabels{
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.herobadge{
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid #E50914;
+    border-radius: 4px;
+    font-family: Arial;
+    font-size: 16px;
+    color: #E50914;
+    font-weight: 600;
+}
+
+.herobadge2{
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid #E50914;
+    border-radius: 4px;
+    font-family: Arial;
+    font-size: 16px;
+    color: #E50914;
+    font-weight: 600;
+}
+
+.herobadge3{
+    padding: 8px 16px;
+    background: transparent;
+    border: 1px solid #E50914;
+    border-radius: 4px;
+    font-family: Arial;
+    font-size: 16px;
+    color: #E50914;
+    font-weight: 600;
+}
+
+.watchbtn{
+    padding: 14px 40px;
+    background: #E50914;
+    border-radius: 4px;
+    font-family: Arial;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.watchbtn:hover{
+    background: #B30710;
+}
+
+.castsection{
+    width: 100%;
+    background: #000;
+    padding: 80px 80px;
+    box-sizing: border-box;
+}
+
+.castwrap{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.castheading{
+    font-family: Tinos;
+    font-size: 48px;
+    color: #E50914;
+    font-weight: 700;
+}
+
+.castdesc{
+    font-family: Arial;
+    font-size: 16px;
+    color: #999;
+    margin-top: -30px;
+}
+
+.castrow{
+    display: flex;
+    gap: 30px;
+}
+
+.castcard{
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.castcard:hover{
+    transform: translateY(-10px);    
+}
+
+.castphoto{
+    width: 100%;
+    height: 400px;
+    background-image: url('Images/ElevenImage.webp');
+    background-size: cover;
+    transition: all 0.7s ease;
+}
+
+.castphoto:hover, .castphoto2:hover, .castphoto3:hover{
+    overflow: hidden;
+    box-shadow: inset 0 0 80px rgba(255, 0, 0, 0.6);
+}
+
+.castphoto2{
+    width: 100%;
+    height: 400px;
+    background-image: url('Images/Mike_Wheeler.png');
+    background-size: cover;
+    transition: all 0.7s ease;
+}
+
+.castphoto3{
+    width: 100%;
+    height: 400px;
+    background-image: url('Images/JimHopperST.png');
+    background-size: cover;
+    transition: all 0.7s ease;
+}
+
+.castname{
+    font-family: Tinos;
+    font-size: 28px;
+    color: #FFF;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.castname2{
+    font-family: Tinos;
+    font-size: 28px;
+    color: #FFF;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.castname3{
+    font-family: Tinos;
+    font-size: 28px;
+    color: #FFF;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.castrole{
+    font-family: Arial;
+    font-size: 16px;
+    color: #E50914;
+    margin-top: 4px;
+}
+
+.castrole2{
+    font-family: Arial;
+    font-size: 16px;
+    color: #E50914;
+    margin-top: 4px;
+}
+
+.castrole3{
+    font-family: Arial;
+    font-size: 16px;
+    color: #E50914;
+    margin-top: 4px;
+}
+
+.episodesection{
+    width: 100%;
+    background: #000;
+    padding: 80px 80px;
+    box-sizing: border-box;
+}
+
+.episodewrap{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.episodeheading{
+    font-family: Tinos;
+    font-size: 48px;
+    color: #E50914;
+    font-weight: 700;
+}
+
+.episodedesc{
+    font-family: Arial;
+    font-size: 16px;
+    color: #999;
+    margin-top: -30px;
+}
+
+.episoderow{
+    display: flex;
+    gap: 30px;
+}
+
+.episodecard{
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.episodecard:hover{
+    transform: translateY(-10px);
+}
+
+.episodethumb{
+    width: 100%;
+    height: 300px;
+    background: #1A1A1A;
+}
+
+.episodethumb2{
+    width: 100%;
+    height: 300px;
+    background: #1A1A1A;
+}
+
+.episodethumb3{
+    width: 100%;
+    height: 300px;
+    background: #1A1A1A;
+}
+
+.episodelabel{
+    font-family: Arial;
+    font-size: 16px;
+    color: #999;
+    margin-top: 16px;
+}
+
+.episodelabel2{
+    font-family: Arial;
+    font-size: 16px;
+    color: #999;
+    margin-top: 16px;
+}
+
+.episodelabel3{
+    font-family: Arial;
+    font-size: 16px;
+    color: #999;
+    margin-top: 16px;
+}
+
+.episodetitle{
+    font-family: Tinos;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+.episodetitle2{
+    font-family: Tinos;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+.episodetitle3{
+    font-family: Tinos;
+    font-size: 20px;
+    color: #FFF;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+.storesection{
+    width: 100%;
+    background: #0A0A0A;
+    padding: 80px 80px;
+    box-sizing: border-box;
+    border: 1px solid #1A1A1A;
+}
+
+.storewrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.storeleft{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+
+.storeheading{
+    font-family: Tinos;
+    font-size: 48px;
+    color: #E50914;
+    font-weight: 700;
+}
+
+.storetext{
+    font-family: Arial;
+    font-size: 16px;
+    color: #999;
+    line-height: 1.6;
+}
+
+.shopbtn{
+    padding: 12px 32px;
+    background: #E50914;
+    border-radius: 4px;
+    font-family: Arial;
+    font-size: 16px;
+    color: #FFF;
+    font-weight: 700;
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.shopbtn:hover{
+    background: #B30710;
+}
+
+.storeright{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.storelogo{
+    width: 200px;
+    height: 200px;
+    background: #E50914;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.headernav{
+    width: 100%;
+    background: #000;
+    padding: 20px 80px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #1A1A1A;
+}
+
+.headerwrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #E50914;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.menubar{
+    display: flex;
+    gap: 40px;
+}
+
+.menulink{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.linkicon{
+    width: 16px;
+    height: 16px;
+    background: #666;
+    border-radius: 50%;
+}
+
+.linkicon2{
+    width: 16px;
+    height: 16px;
+    background: #E50914;
+    border-radius: 50%;
+}
+
+.linkicon3{
+    width: 16px;
+    height: 16px;
+    background: #666;
+    border-radius: 50%;
+}
+
+.linkicon4{
+    width: 16px;
+    height: 16px;
+    background: #666;
+    border-radius: 50%;
+}
+
+.linkname{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #999;
+    font-weight: 600;
+}
+
+.linkname2{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #E50914;
+    font-weight: 600;
+}
+
+.linkname3{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #999;
+    font-weight: 600;
+}
+
+.linkname4{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #999;
+    font-weight: 600;
+}
+
+.profilesection{
+    width: 100%;
+    background: #000;
+    padding: 40px 80px 80px 80px;
+    box-sizing: border-box;
+}
+
+.profilewrap{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.backlink{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.backicon{
+    width: 16px;
+    height: 16px;
+    background: #999;
+}
+
+.backtext{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #999;
+    font-weight: 600;
+}
+
+.profilerow{
+    display: flex;
+    gap: 60px;
+}
+
+.profileleft{
+    width: 35%;
+}
+
+.profileimage{
+    width: 100%;
+    height: 550px;
+    background: #1A1A1A;
+}
+
+.profileright{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 65%;
+}
+
+.titlelabel{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #E50914;
+    font-weight: 600;
+}
+
+.charactername{
+    font-family: Tinos;
+    font-size: 72px;
+    color: #E50914;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-top: -10px;
+}
+
+.actorinfo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: -10px;
+}
+
+.actoricon{
+    width: 16px;
+    height: 16px;
+    background: #E50914;
+    border-radius: 50%;
+}
+
+.actortext{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #CCC;
+}
+
+.bioheading{
+    font-family: Tinos;
+    font-size: 20px;
+    color: #E50914;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.biotext{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #999;
+    line-height: 1.8;
+    margin-top: -10px;
+}
+
+.powersheading{
+    font-family: Tinos;
+    font-size: 20px;
+    color: #E50914;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.powerslist{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: -10px;
+}
+
+.poweritem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.powericon{
+    width: 6px;
+    height: 6px;
+    background: #E50914;
+}
+
+.powericon2{
+    width: 6px;
+    height: 6px;
+    background: #E50914;
+}
+
+.powericon3{
+    width: 6px;
+    height: 6px;
+    background: #E50914;
+}
+
+.powername{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #CCC;
+}
+
+.powername2{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #CCC;
+}
+
+.powername3{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #CCC;
+}
+
+.statssection{
+    width: 100%;
+    background: #000;
+    padding: 60px 80px;
+    box-sizing: border-box;
+    border-top: 1px solid #1A1A1A;
+}
+
+.statswrap{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.statsheading{
+    font-family: Tinos;
+    font-size: 32px;
+    color: #E50914;
+    font-weight: 700;
+}
+
+.statsrow{
+    display: flex;
+    gap: 40px;
+}
+
+.statbox{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 33.33%;
+}
+
+.statlabel{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #999;
+}
+
+.statlabel2{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #999;
+}
+
+.statlabel3{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #999;
+}
+
+.statbar{
+    width: 100%;
+    height: 12px;
+    background: #1A1A1A;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.statfill{
+    width: 98%;
+    height: 100%;
+    background: #E50914;
+}
+
+.statfill2{
+    width: 90%;
+    height: 100%;
+    background: #E50914;
+}
+
+.statfill3{
+    width: 100%;
+    height: 100%;
+    background: #E50914;
+}
+
+.statvalue{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #E50914;
+    font-weight: 700;
+}
+
+.statvalue2{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #E50914;
+    font-weight: 700;
+}
+
+.statvalue3{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #E50914;
+    font-weight: 700;
+}
+
+.quotessection{
+    width: 100%;
+    background: #000;
+    padding: 60px 80px;
+    box-sizing: border-box;
+}
+
+.quoteswrap{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.quotesheading{
+    font-family: Tinos;
+    font-size: 32px;
+    color: #E50914;
+    font-weight: 700;
+}
+
+.quotesrow{
+    display: flex;
+    gap: 30px;
+}
+
+.quotebox{
+    display: flex;
+    flex-direction: column;
+    background: #0A0A0A;
+    border: 1px solid #1A1A1A;
+    border-radius: 4px;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 33.33%;
+}
+
+.quotetext{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #CCC;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.quotetext2{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #CCC;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.quotetext3{
+    font-family: Tinos;
+    font-size: 16px;
+    color: #CCC;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.dimensionsection{
+    width: 100%;
+    background: #000;
+    padding: 80px 80px;
+    box-sizing: border-box;
+    border-top: 1px solid #1A1A1A;
+}
+
+.dimensionwrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.dimensionlogo{
+    width: 80px;
+    height: 80px;
+    background: #E50914;
+}
+
+.dimensionname{
+    font-family: Tinos;
+    font-size: 24px;
+    color: #E50914;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
